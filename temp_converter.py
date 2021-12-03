@@ -7,10 +7,10 @@ root.title("Temperature converter")
 def calculate_temp_celcius():
     if decision.get() == 1:
         temp_placeholder = temp_in_f.get() - 32
-        temp_placeholder2 = temp_placeholder * 5 / 9
+        temp_placeholder2 = temp_placeholder * 5/9
         temp_in_c.set(temp_placeholder2)
     elif decision.get() == 2:
-        temp_placeholder = temp_in_c.get() * 5/9
+        temp_placeholder = temp_in_c.get() * 9/5
         temp_placeholder2 = temp_placeholder + 32
         temp_in_f.set(temp_placeholder2)
 
